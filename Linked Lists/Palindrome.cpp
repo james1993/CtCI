@@ -65,16 +65,6 @@ void prettyPrintLinkedList(ListNode* node) {
 
 bool is_palindrome(ListNode* head)
 {
-    //[1, 2, 3, 4, 5, 4, 3, 2, 1]
-    //fast = 1
-    //slow = 5
-    
-    
-    //prev = 5
-    //temp = 4
-    //5->NULL
-    
-    
     //1. find middle of linked list
     ListNode* slow = head;
     ListNode* fast = head;
