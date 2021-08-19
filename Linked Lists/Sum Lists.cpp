@@ -111,10 +111,7 @@ ListNode* sum_lists(ListNode* head1, ListNode* head2)
 int main() {
     string line;
     ListNode* head = NULL;
-    while (getline(cin, line)) {
-        //head = stringToListNode(line);
-        //prettyPrintLinkedList(head);
-    }
+
     ListNode* head1 = stringToListNode("[7,1,6]");
     ListNode* head2 = stringToListNode("[5,9,2,1]");
     ListNode* sum_head = sum_lists(head1, head2);
