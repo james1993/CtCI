@@ -62,7 +62,11 @@ void prettyPrintLinkedList(ListNode* node) {
     cout << "Empty LinkedList" << endl;
   }
 }
-
+/*
+You have two numbers represented by a linked list, where each node contains a single digit.
+The digits are stored in reverse order. Write a function that adds the two numbers 
+and returns the sum as a linked list.
+*/
 ListNode* sum_lists(ListNode* head1, ListNode* head2)
 {
     int carry = 0;

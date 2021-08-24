@@ -41,14 +41,6 @@ ListNode* stringToListNode(string input) {
     return ptr;
 }
 
-void delete_middle_node(ListNode*& node)
-{
-    node->val = node->next->val;
-    ListNode* temp = node->next; 
-    node->next = node->next->next;
-    delete temp; //don't leave dangling pointer!
-}
-
 void prettyPrintLinkedList(ListNode* node) {
   while (node && node->next) {
       cout << node->val << "->";
@@ -61,7 +53,17 @@ void prettyPrintLinkedList(ListNode* node) {
     cout << "Empty LinkedList" << endl;
   }
 }
-
+/*
+Implement an algorithm to delete a node in the middle of a singly linked list, given only
+access to that node.
+*/
+void delete_middle_node(ListNode*& node)
+{
+    node->val = node->next->val;
+    ListNode* temp = node->next; 
+    node->next = node->next->next;
+    delete temp; //don't leave dangling pointer!
+}
 int main() {
     string line;
     ListNode* head = NULL;

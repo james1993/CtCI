@@ -62,7 +62,9 @@ void prettyPrintLinkedList(ListNode* node) {
     cout << "Empty LinkedList" << endl;
   }
 }
-
+/*
+Given two (singly) linked lists, determine if the two lists intersect. Return the intersecting node.
+*/
 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) 
 {
     ListNode *p1 = headA;

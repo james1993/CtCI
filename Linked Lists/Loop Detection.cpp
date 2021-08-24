@@ -62,6 +62,9 @@ void prettyPrintLinkedList(ListNode* node) {
     cout << "Empty LinkedList" << endl;
   }
 }
+/*
+Given a circular linked list, implement an algorithm that returns the node at the beginning of the loop.
+*/
 ListNode *detectCycle(ListNode *head) 
 {
     ListNode* slow = head;

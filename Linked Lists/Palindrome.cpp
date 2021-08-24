@@ -62,7 +62,9 @@ void prettyPrintLinkedList(ListNode* node) {
     cout << "Empty LinkedList" << endl;
   }
 }
-
+/*
+Implement a function to check if a linked list is a palindrome.
+*/
 bool is_palindrome(ListNode* head)
 {
     //1. find middle of linked list
